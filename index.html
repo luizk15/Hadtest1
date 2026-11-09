@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vector Drift</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="frame">
+      <div class="hud">
+        <div class="panel left">
+          <span>Score</span>
+          <strong id="score">0</strong>
+        </div>
+        <div class="panel center">
+          <span>Wave</span>
+          <strong id="wave">1</strong>
+        </div>
+        <div class="panel right">
+          <span>Integrity</span>
+          <strong id="health">100%</strong>
+        </div>
+      </div>
+
+      <canvas id="gameCanvas" width="960" height="540" aria-label="Jogo Vector"></canvas>
+
+      <div id="overlay" class="overlay visible">
+        <div class="card">
+          <p class="eyebrow">NEON ROGUE</p>
+          <h1>VECTOR DRIFT</h1>
+          <p class="description">
+            Navegue pelo campo, abata drones e sobreviva às ondas até a linha de frente quebrar.
+          </p>
+          <ul>
+            <li>WASD / setas para mover</li>
+            <li>Mouse para mirar</li>
+            <li>Botão esquerdo / Espaço para atirar</li>
+            <li>R para reiniciar</li>
+          </ul>
+          <button id="startButton">Iniciar</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
